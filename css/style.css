@@ -1,0 +1,306 @@
+/*common css start*/
+*:root{
+    /*Font variable*/
+    --body-font:"Open Sans", sans-serif;
+    --primary-heading:"Abril Fatface", cursive;
+    --secondary-heading:"Ubuntu", sans-serif;
+    --button-font:"Ubuntu", sans-serif; 
+    /*Color variable*/
+    --primary-color:#0f2f44;
+    --secondary-color:#8484bf;
+    --light-color:#ffffff;
+    --para-color:#444444;
+    --dark-text-color:#222222;
+    --hover-color:#ffc712;
+    --hover-background-color:#fff9e6;
+    --primary-background:#f5f5f5;
+    --secondary-background-dark:#e9e9e9;
+    --secondary-background-light:#eeeeee;
+    /*Tramsition variable*/
+    --slow:0.8s;
+    --normal:0.5s;
+    --fast:0.3s
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: var(--body-font);
+}
+h1,h2{
+    font-family: var(--primary-heading);
+    font-weight: 400;
+}
+h3,h4,h5,h6,a,button,strong{
+    font-family: var(--secondary-heading);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+.w-50{
+    width: 50%;
+}
+.w-33{
+    width:calc(100% / 3);
+}
+.btn{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 15px 20px;
+    color: var(--primary-color);
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 7px 20px 0 rgba(0,0,0,0.15);
+    transition: var(--normal);
+}
+.btn:hover{
+    background-color: var(--hover-color);
+    box-shadow: 0 7px 20px 0 rgba(255,199,18,0.25);
+    cursor: pointer;
+}
+/*common css end*/
+
+/*Header section css start*/
+#header{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-family: var(--secondary-heading);
+}
+#header .container{
+    justify-content: space-between;
+}
+#header p{
+    padding: 18px 0;
+}
+/*Header section css end*/
+
+/*Nav section css start*/
+nav{
+    background-color: var(--light-color);
+    width: 100%;
+    position: sticky;
+}
+nav div img{
+    padding: 30px 0;
+}
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+nav li{
+    text-align: center;
+}
+nav ul li a{
+    font-family: var(--secondary-heading);
+    font-size: 16px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    padding: 39px 19px;
+    transition:var(--normal);
+}
+nav ul li a:hover{
+    color:var(--hover-color);
+    background-color: var(--hover-background-color);
+}
+nav ul .navicon{
+    color: #999999;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    padding-top: 2px;
+    cursor: pointer;
+}
+nav .row .navicon:last-child{
+    margin-left: 20px;
+}
+/*Nav section css end*/
+
+/*Banner section css start*/
+#banner{
+    background-image: url(./../images/bannerimg.jpg);
+    height: 599px;
+    background-color: #e0edff;
+    background-size: cover;
+    background-position: center;
+}
+#banner .container .inner_container{
+    width: 40%;
+    padding: 125px 0;
+}
+#banner h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 23px;
+    line-height: 0.5;
+}
+#banner h3{
+    font-size: 50px;
+    font-weight: 300;
+    color: var(--primary-color);
+    margin-bottom: 13px;
+}
+#banner h4{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 13px;
+    color: var(--secondary-color);
+    letter-spacing: 18px;
+}
+#banner p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+#banner .btn:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 7px 20px 0 rgba(132,132,191,0.15);
+    cursor: pointer;
+    color: var(--light-color);
+    font-family: var(--secondary-heading);
+}
+#banner .row i{
+    color: var(--secondary-color);
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+    margin-left: 20px;
+    margin-top: 3px;
+    text-align: center;
+    padding-top:17px;
+    padding-left: 2px;
+    box-shadow: 0 7px 20px 0 rgba(132,132,191,0.15);
+    transition: var(--normal);
+}
+#banner .row i:hover{
+    background-color: var(--secondary-color);
+    box-shadow: 0 7px 20px 0 rgba(132,132,191,0.15);
+    cursor: pointer;
+    color: var(--light-color);
+}
+/*Banner section css end*/
+
+/*About section css start*/
+#about{
+    padding-top: 100px;
+}
+#about .inner_container h2{
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 32px;
+    line-height: 0.5;
+}
+#about .inner_container h5{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+#about .inner_container p{
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+#about .inner_container ul li p{
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 29px;
+}
+#about .btn:first-child{
+    margin-right: 20px;
+}
+/*About section css end*/
+
+/*Skill section css start*/
+#skill{
+    padding: 100px 0;
+}
+#skill .row{
+    flex-wrap: nowrap;
+}
+#skill .image img{
+    position: absolute;
+    padding-left: 210px;
+}
+#skill .inner_container{
+    text-align: right;
+    margin-left: auto;
+}
+#skill .inner_container h2{
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 32px;
+    line-height: 0.5;
+}
+#skill .inner_container h5{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+#skill .inner_container p{
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+#skill .skillbox{
+    justify-content: end;
+    margin-top: 20px;
+}
+#skill .skillbox .loaderbox div{
+    justify-content: space-between;
+}
+#skill .skillbox .loaderbox p{
+    font-family: var(--secondary-heading);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 0;
+}
+#skill .skillbox .loader{
+    width: 412px;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#skill .skillbox .skillicon{
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    box-shadow: 10px 25px 60px 0 rgba(0,0,0,0.15);
+    margin-left: 20px;
+}
+#skill .skillbox .skillicon img{
+    margin-right: 15px;
+    margin-top: 15px;
+}
+/*Skill section css end*/
+
+
+
+
